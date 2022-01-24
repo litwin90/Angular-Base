@@ -6,3 +6,16 @@
     background-color: white;
     vertical-align: middle;
 }
+
+:host:hover {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+:host:active {
+    background-color: gray;
+}
+
+:host:focus {
+    border: 2px solid red;
+}
