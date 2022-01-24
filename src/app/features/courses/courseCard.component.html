@@ -1,0 +1,9 @@
+<info title="{{title}}" text="{{text}}"></info>
+<ul class='information-list'>
+    <li><b>Authors: </b>{{authors}}</li>
+    <li id="duration"><b>Duration: </b>{{duration}}</li>
+    <li id="date"><b>Created: </b>{{creationDate}}</li>
+</ul>
+<button common-button buttonText="Show course">Show course</button>
+<button common-button *ngIf="isEditable" buttonTextIconName="pen"></button>
+<button common-button *ngIf="isEditable" buttonTextIconName="trash"></button>
