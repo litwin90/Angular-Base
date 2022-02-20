@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { emailValidator } from 'src/app/shared/validators/email-validator';
 
 @Component({
     selector: 'registration',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     styleUrls: ['./registration.component.css'],
     templateUrl: './registration.component.html',
 })
