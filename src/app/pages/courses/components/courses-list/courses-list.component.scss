@@ -1,0 +1,106 @@
+.course-card {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.3);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        box-shadow: 0px 0px 10px grey;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .card-header {
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: space-between;
+        width: 100%;
+
+        .card-title {
+            color: black;
+            line-height: 28px;
+            margin: 0;
+            max-width: 600px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .card-subtitle {
+            align-items: center;
+            color: grey;
+            display: flex;
+            margin: 0;
+            white-space: nowrap;
+
+            mat-icon {
+                font-size: 16px;
+                height: 16px;
+                padding: 0px 5px 0px 15px;
+                width: 16px;
+            }
+        }
+    }
+
+    .card-content {
+        color: grey;
+        line-height: 25px;
+        margin: 0;
+        padding: 0;
+        padding-top: 8px;
+    }
+
+    .card-actions {
+        align-items: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        margin-right: 0;
+        padding-bottom: 10px;
+        width: 350px;
+
+        button {
+            align-items: center;
+            background-color: blue;
+            border: none;
+            border-radius: 2px;
+            color: white;
+            display: flex;
+            gap: 5px;
+            margin-left: 5px;
+            padding: 5px 15px 5px 10px;
+            transition: all 0.5s ease;
+
+            mat-icon {
+                font-size: 18px;
+                height: 18px;
+            }
+
+            &:hover {
+                background-color: rgb(0, 0, 192);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.load-more-btn {
+    background-color: transparent;
+    border: none;
+    color: blue;
+    margin: 0 auto;
+    text-decoration: underline;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: rgb(0, 0, 192);
+        cursor: pointer;
+    }
+}
