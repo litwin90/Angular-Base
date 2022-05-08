@@ -1,0 +1,29 @@
+.home-page-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+
+    .start-btn {
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: black;
+        display: flex;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 auto;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+
+        img {
+            margin-right: 10px;
+            width: 60px;
+        }
+
+        &:hover {
+            color: rgb(124, 196, 255);
+            cursor: pointer;
+        }
+    }
+}
